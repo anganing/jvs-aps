@@ -1,6 +1,5 @@
 package cn.bctools.common.utils;
 
-import cn.bctools.common.utils.ObjectNull;
 import com.alibaba.ttl.TransmittableThreadLocal;
 import lombok.extern.slf4j.Slf4j;
 

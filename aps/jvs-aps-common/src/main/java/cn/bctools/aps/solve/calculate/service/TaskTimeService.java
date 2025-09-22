@@ -4,7 +4,7 @@ import cn.bctools.aps.solve.model.MainProductionResource;
 import cn.bctools.aps.solve.model.ProductionTask;
 import cn.bctools.aps.solve.model.SchedulingSolution;
 import cn.bctools.aps.solve.model.WorkCalendar;
-import org.optaplanner.core.api.score.director.ScoreDirector;
+import ai.timefold.solver.core.api.score.director.ScoreDirector;
 
 import java.time.LocalDateTime;
 import java.util.List;

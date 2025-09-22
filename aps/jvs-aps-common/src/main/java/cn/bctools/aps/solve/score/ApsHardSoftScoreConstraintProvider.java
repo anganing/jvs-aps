@@ -3,8 +3,8 @@ package cn.bctools.aps.solve.score;
 import cn.bctools.aps.solve.model.ProductionTask;
 import cn.bctools.common.utils.ObjectNull;
 import lombok.extern.slf4j.Slf4j;
-import org.optaplanner.core.api.score.buildin.hardsoftlong.HardSoftLongScore;
-import org.optaplanner.core.api.score.stream.*;
+import ai.timefold.solver.core.api.score.buildin.hardsoftlong.HardSoftLongScore;
+import ai.timefold.solver.core.api.score.stream.*;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

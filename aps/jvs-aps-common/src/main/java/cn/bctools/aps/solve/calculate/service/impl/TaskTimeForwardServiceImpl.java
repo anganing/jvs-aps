@@ -18,7 +18,7 @@ import cn.bctools.common.utils.ObjectNull;
 import lombok.Data;
 import lombok.experimental.Accessors;
 import lombok.extern.slf4j.Slf4j;
-import org.optaplanner.core.api.score.director.ScoreDirector;
+import ai.timefold.solver.core.api.score.director.ScoreDirector;
 import org.springframework.stereotype.Service;
 
 import java.time.Duration;

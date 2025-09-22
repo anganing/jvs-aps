@@ -4,9 +4,9 @@ import cn.bctools.aps.annotation.Comment;
 import cn.bctools.common.utils.ObjectNull;
 import lombok.Data;
 import lombok.experimental.Accessors;
-import org.optaplanner.core.api.domain.solution.*;
-import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;
-import org.optaplanner.core.api.score.buildin.hardsoftlong.HardSoftLongScore;
+import ai.timefold.solver.core.api.domain.solution.*;
+import ai.timefold.solver.core.api.domain.valuerange.ValueRangeProvider;
+import ai.timefold.solver.core.api.score.buildin.hardsoftlong.HardSoftLongScore;
 
 import java.time.LocalDateTime;
 import java.util.List;

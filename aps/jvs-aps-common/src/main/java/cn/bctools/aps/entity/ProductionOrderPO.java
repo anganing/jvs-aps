@@ -1,7 +1,9 @@
 package cn.bctools.aps.entity;
 
 import cn.bctools.aps.annotation.Comment;
-import cn.bctools.aps.entity.enums.*;
+import cn.bctools.aps.entity.enums.OrderSchedulingStatusEnum;
+import cn.bctools.aps.entity.enums.OrderStatusEnum;
+import cn.bctools.aps.entity.enums.OrderTypeEnum;
 import cn.bctools.database.entity.po.BasalPo;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

@@ -8,8 +8,8 @@ import cn.bctools.aps.solve.model.ProductionTask;
 import cn.bctools.aps.solve.model.SchedulingSolution;
 import cn.bctools.common.utils.SpringContextUtil;
 import lombok.extern.slf4j.Slf4j;
-import org.optaplanner.core.api.domain.variable.ListVariableListener;
-import org.optaplanner.core.api.score.director.ScoreDirector;
+import ai.timefold.solver.core.api.domain.variable.ListVariableListener;
+import ai.timefold.solver.core.api.score.director.ScoreDirector;
 
 /**
  * @author jvs
