@@ -30,7 +30,7 @@ public class SchedulingSolution {
     private PlanningStrategy strategy;
 
     @Comment("生产订单")
-    @ProblemFactCollectionProperty
+    @PlanningEntityCollectionProperty
     private List<ProductionOrder> productionOrders;
 
     @Comment("主资源")
@@ -38,7 +38,7 @@ public class SchedulingSolution {
     private List<MainProductionResource> mainResources;
 
     @Comment("生产任务")
-    @ProblemFactCollectionProperty
+    @PlanningEntityCollectionProperty
     @ValueRangeProvider
     private List<ProductionTask> tasks;
 

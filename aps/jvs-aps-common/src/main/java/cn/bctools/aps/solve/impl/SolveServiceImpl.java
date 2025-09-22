@@ -100,6 +100,7 @@ public class SolveServiceImpl implements SolveService {
             // 修改排产进度
             solveProgressService.addProgressLog(SolveProgressStatusEnum.SUCCESS,"排程已完成");
         } catch (Exception e) {
+            e.printStackTrace();
             log.error("排产异常：", e);
             solveProgressService.addProgressLog(SolveProgressStatusEnum.FAILURE,"排程失败：" + e.getMessage());
             throw new BusinessException(e.getMessage());

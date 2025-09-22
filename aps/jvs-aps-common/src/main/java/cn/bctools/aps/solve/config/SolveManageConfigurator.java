@@ -1,5 +1,6 @@
 package cn.bctools.aps.solve.config;
 
+import ai.timefold.solver.core.api.score.stream.ConstraintStreamImplType;
 import cn.bctools.aps.entity.dto.planning.StrategyConfigDTO;
 import cn.bctools.aps.solve.model.MainProductionResource;
 import cn.bctools.aps.solve.model.PlanningStrategy;
@@ -8,7 +9,6 @@ import cn.bctools.aps.solve.model.SchedulingSolution;
 import cn.bctools.aps.solve.score.ApsHardSoftScoreConstraintProvider;
 import cn.bctools.common.utils.ObjectNull;
 import cn.bctools.common.utils.TenantContextHolder;
-import ai.timefold.solver.core.api.score.stream.ConstraintStreamImplType;
 import ai.timefold.solver.core.api.solver.SolverFactory;
 import ai.timefold.solver.core.api.solver.SolverManager;
 import ai.timefold.solver.core.config.solver.SolverConfig;
@@ -75,9 +75,11 @@ public class SolveManageConfigurator {
                 .withSolutionClass(SchedulingSolution.class)
                 .withEntityClasses(ProductionTask.class, MainProductionResource.class)
                 .withConstraintProviderClass(ApsHardSoftScoreConstraintProvider.class)
-                .withConstraintStreamImplType(ConstraintStreamImplType.BAVET)
-                .withTerminationConfig(terminationConfig)
-                .withMoveThreadCount("AUTO");
+                // 在新版本中，约束流实现类型会自动选择，不需要手动指定。
+//                .withConstraintStreamImplType(ConstraintStreamImplType.BAVET)
+                .withTerminationConfig(terminationConfig);
+                // 多线程求解需要企业版
+                // .withMoveThreadCount("AUTO");
 
         // 创建SolverManager实例
         SolverFactory<SchedulingSolution> solverFactory = SolverFactory.create(solverConfig);
